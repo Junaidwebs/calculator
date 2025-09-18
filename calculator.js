@@ -7,12 +7,10 @@ buttons.forEach((button) =>{
     button.addEventListener("click" ,(e) =>{
         if(e.target.innerHTML == '='){
             string = eval(string);
-            console.log(button)
             document.querySelector('input').value = string;
 
         }
         else{
-            console.log("clicked");
             string = string + e.target.innerHTML;
             document.querySelector('input').value = string;
         }
